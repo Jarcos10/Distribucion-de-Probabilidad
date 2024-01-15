@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Distribuciones de probabilidad</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="start-screen">
+            <h1 class="heading">Adivinador de distribuciones de probabilidad</h1>
+            <img id="img-1" src="imagenes/perrito_pregunta.png">
+            <button class="btn start">Comenzar</button>
+        </div>
+        <div class="quiz hide">
+
+            <div class="question-wrapper">
+                <div class="number">
+                    Pregunta <span class="current">1</span>
+                </div>
+                <div class="question">¿La distribución tiene una variable aleatoria que mide?</div>
+            </div>
+            <div class="answer-wrapper">
+                <div class="answer selected">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+            <button class="btn submit" disabled>Submit</button>
+        </div>
+        <div class="end-screen hide">
+            <h1 class="heading">Adivinador de distribuciones de probabilidad</h1>
+            <div class="distribution">
+                <span class="distribution-text">Tu distribución es:</span>
+                <div>
+                    <span class="distribution-answer">0</span>
+                </div>
+
+                <div>
+                    <img id="img-2" src="imagenes/Perrito_exito.png">
+                </div>
+
+            </div>
+            <button class="btn restart">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
